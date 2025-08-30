@@ -12,7 +12,7 @@ export function GradientCircle({ className }: React.ComponentProps<"div">) {
         scale: { duration: 5, ease: "easeInOut", delay: 0.1, repeat: Infinity },
       }}
       className={cn(
-        "absolute rounded-full blur-[100px] aspect-square will-change-transform w-[70vmax] bg-[rgb(246,63,42,0.9)]",
+        "absolute rounded-full blur-[100px] aspect-square will-change-transform w-[70vmax] bg-[rgb(54,0,126,0.9)]",
         className
       )}
     />

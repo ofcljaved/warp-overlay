@@ -1,7 +1,8 @@
 'use client'
 
+import { Modal } from "@/components/modal";
 import { WarpOverlay } from "@/components/warp-overlay";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence } from "motion/react";
 import React from "react";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         {mount && (
           <>
             <WarpOverlay onClick={() => setMount(false)} />
+            <Modal onClick={() => setMount(false)} />
           </>
         )}
       </AnimatePresence>

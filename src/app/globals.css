@@ -23,4 +23,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  --s: 10vmax;
+  /* control the size*/
+  --c1: #111;
+  --c2: var(--background);
+
+  --_g: #0000 52%, var(--c1) 54% 57%, #0000 59%;
+  background:
+    radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0 calc(var(--s)/2),
+    radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s)/2) 0,
+    radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
+    radial-gradient(farthest-side at 50% -33.33%, var(--_g)),
+    var(--c2);
+  background-size: calc(var(--s)/4.667) var(--s), var(--s) calc(var(--s)/4.667);
 }
