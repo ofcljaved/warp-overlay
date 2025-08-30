@@ -18,12 +18,12 @@ export function Modal({ onClick }: { onClick: () => void }) {
           "before:absolute before:rounded-2xl before:-inset-5 before:bg-white/5 before:z-[-1] before:backdrop-blur-sm before:border before:border-white/15"
         )}
       >
-        <p className="text-balance col-span-full text-xl text-shadow-2xs text-shadow-white">Are you sure you want to do this? You can't undo this action.</p>
+        <p className="text-balance col-span-full text-xl text-shadow-2xs text-shadow-white">Are you sure you want to do this? You can&apos;t undo this action.</p>
         <button
           className="rounded-full border border-transparent transition-colors bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto cursor-pointer"
           onClick={onClick}
         >
-          Yes, I'm sure
+          Yes, I&apos;m sure
         </button>
         <button
           className="rounded-full border border-white/20 transition-colors bg-white/5 backdrop-blur-sm text-foreground  font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto cursor-pointer"
